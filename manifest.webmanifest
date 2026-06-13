@@ -1,0 +1,11 @@
+{
+  "name": "Video to GIF",
+  "short_name": "Video→GIF",
+  "description": "Convert videos to GIFs entirely in your browser. Nothing is uploaded.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f1117",
+  "theme_color": "#0f1117"
+}
