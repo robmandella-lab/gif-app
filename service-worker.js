@@ -1,6 +1,6 @@
 // Offline cache for the Video→GIF app.
 // Bump CACHE_VERSION whenever you change the app's files to force an update.
-const CACHE_VERSION = 'gif-v1';
+const CACHE_VERSION = 'gif-v2';
 const ASSETS = [
   './',
   './index.html',

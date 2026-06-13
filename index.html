@@ -63,7 +63,7 @@
     #drop strong { color: var(--fg); }
     #drop .big { font-size: 32px; margin-bottom: 6px; }
 
-    video { width: 100%; border-radius: 10px; background:#000; display:block; }
+    video { width: 100%; max-height: 38vh; object-fit: contain; border-radius: 10px; background:#000; display:block; }
 
     .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px; margin-top: 16px; }
     .field { display: flex; flex-direction: column; gap: 6px; }
@@ -307,6 +307,7 @@
         $('result').style.display = 'block';
         resultCard.classList.remove('hidden');
         setStatus('Done.');
+        resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
         try { await ff.deleteFile(inName); await ff.deleteFile('out.gif'); } catch {}
       } catch (err) {
         console.error(err);
